@@ -1,0 +1,5 @@
+#all crediantials 
+*.pdf
+__pycache__/
+#all log files 
+*.log
