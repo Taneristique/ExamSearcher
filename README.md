@@ -44,11 +44,11 @@ By giving Exam Searcher a star on GitHub, you help it reach a wider audience and
 ### Step 4
 `python3 main.py`
 
+## Additional Note 
+The most suitable python version for ExamSearcher is Python 3.12.1 therefore consider avoiding to use it with different versions.
 
 ## Usage:
 It is detailly demonstrated in the following page [screenshots](https://github.com/Taneristique/ExamSearcher/tree/main/screenshots).
-
-
 
 ## Contributing:
 Please open a new issue to contribute from [issues](https://github.com/Taneristique/ExamSearcher/issues) section,if you have any proposal or issue related to Exam Searcher.
