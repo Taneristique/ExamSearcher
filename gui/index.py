@@ -17,9 +17,12 @@ class Form:  # Class names should start with uppercase letters
         # Global variable (not recommended) - Consider storing within the class
         self.selected_file_path = None  # Initialize to None
 
+        # Label to explain for what reason the checkbox is used in this gui
+        checkbox_input_label = tk.Label(self.root, text="Select Exam Day")
+        checkbox_input_label.pack(pady=5)
         # Checkbox with Lesson Options (All initially selected)
         self.lesson_var = tk.StringVar(value="CUMARTESİ 1.OTURUM")  # Set default selection
-        self.lesson_options = ["CUMARTESİ 1.OTURUM", "CUMARTESİ 2.OTURUM", "PAZAR 1.OTURUM", "PAZAR 2.OTURUM", "Bilmiyorum"]
+        self.lesson_options = ["CUMARTESİ 1.OTURUM", "CUMARTESİ 2.OTURUM", "PAZAR 1.OTURUM", "PAZAR 2.OTURUM","Cumartesi","Pazar","Bilmiyorum"]
 
         lesson_frame = tk.Frame(self.root)
         lesson_frame.pack(pady=10)
