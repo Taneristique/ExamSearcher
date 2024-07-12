@@ -18,6 +18,7 @@ def pdf_data_handler(words: List[str],pdf_path: str = None):
     """
     logging.basicConfig(filename='runtime_error.log', level=logging.ERROR)  #  # Retrieve logger
     error_logger = logging.getLogger('error_logger')
+    txt = []
 
     try:
         pdf = PdfReader(pdf_path)
@@ -26,8 +27,7 @@ def pdf_data_handler(words: List[str],pdf_path: str = None):
         if(len(page_number)==1):
             txt=pages[0].extract_text()
         else: 
-            txt = []
-            for i in range(page_number):
+            for i in range(len(page_number)):
                 txt.append(pages[i].extract_text())
         processed_pdf = txt 
         return searchLessonCode(words,processed_pdf)
@@ -52,9 +52,6 @@ def searchLessonCode(lesson_codes: List[str], processed_pdf:str)->str:
     txt = ""
     for i in range(len(processed_pdf)):
         for j in lesson_codes:
-                if(re.search(j,processed_pdf[i]) != None):
+                if(j in processed_pdf[i]):
                     txt += j+'\n'
-    else: 
-        for i in range(len(lesson_codes)):
-            txt += lesson_codes[i]+"\n" if re.search(lesson_codes[i],processed_pdf) != None else ""
     return txt
