@@ -31,12 +31,27 @@ By giving Exam Searcher a star on GitHub, you help it reach a wider audience and
 
 ## Getting Started:
 
+### Step 1 
+`git clone https://github.com/Taneristique/ExamSearcher.git`
+
+### Step 2
+`sudo apt-get install python3-tk` (this step is optional use it if you use linux and face with following issue : ModuleNotFoundError : No module named 'tkinter'
+ consider submitting )
+
+### Step 3
+`cd ExamSearcher`
+
+### Step 4
+`python3 main.py`
+
 
 ## Usage:
+It is detailly demonstrated in the following page [screenshots](https://github.com/Taneristique/ExamSearcher/tree/main/screenshots).
+
 
 
 ## Contributing:
-
+Please open a new issue to contribute from [issues](https://github.com/Taneristique/ExamSearcher/issues) section,if you have any proposal or issue related to Exam Searcher.
 
 ## Disclaimer:
 
